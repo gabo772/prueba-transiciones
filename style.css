@@ -1,0 +1,32 @@
+.container,.header,.body{
+    display: flex;
+  }
+
+.container{
+    height: 1700px;
+    flex-direction: column;
+  }
+
+.header{
+    height: 15%;
+    flex-direction: row;
+    width: 100%;
+    background-color: red;
+  }
+  .body{
+    height: 85%;
+    background-color:orange;
+  }
+  
+  .d1{
+      display: flex;
+      padding-top: 7em;
+      flex-direction: column;
+      font-size: 30px;
+      align-items: center;
+      text-align: center;
+  }
+  .d1 div{
+      
+      padding-top: 4em;
+  }
