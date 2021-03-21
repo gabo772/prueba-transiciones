@@ -9,6 +9,7 @@
 
 .header{
     height: 15%;
+    transition-property: height position;
     flex-direction: row;
     width: 100%;
     background-color: red;
@@ -29,4 +30,27 @@
   .d1 div{
       
       padding-top: 4em;
+  }
+
+
+  /* TRANSICIONES*/
+
+  .header-scroll{
+    transition-property: height position;
+    position:fixed;
+    top: 270px;
+    height: 0;
+    flex-direction: row;
+    width: 100%;
+    background-color: red;
+  }
+
+  .header-scrollend{
+    transition-property: height position;
+    position:fixed;
+    top: 270px;
+    height: 5%;
+    flex-direction: row;
+    width: 100%;
+    background-color: green;
   }
