@@ -8,8 +8,7 @@
   }
 
 .header{
-    height: 15%;
-    transition-property: height position;
+    height:262px;
     flex-direction: row;
     width: 100%;
     background-color: red;
@@ -36,21 +35,22 @@
   /* TRANSICIONES*/
 
   .header-scroll{
-    transition-property: height position;
+    display: flex;
+    transition-property: height color;
     position:fixed;
-    top: 270px;
-    height: 0;
-    flex-direction: row;
-    width: 100%;
-    background-color: red;
-  }
-
-  .header-scrollend{
-    transition-property: height position;
-    position:fixed;
-    top: 270px;
-    height: 5%;
+    height: 0px;
     flex-direction: row;
     width: 100%;
     background-color: green;
+  }
+
+  .header-scrollend{
+    display: flex;
+    transition-property: height  color;
+    transition-duration: 1s;
+    position:fixed;
+    height:131px;
+    flex-direction: row;
+    width: 100%;
+    background-color: blue;
   }
