@@ -11,7 +11,7 @@
     height:262px;
     flex-direction: row;
     width: 100%;
-    background-color: red;
+    background-color: rgb(15, 119, 97);
   }
   .body{
     height: 85%;
@@ -31,6 +31,22 @@
       padding-top: 4em;
   }
 
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: rgb(15, 119, 97);
+    padding-bottom: 2em;
+    width: 100%;
+  }
+  .nav .item{
+    display: flex;
+    text-align: center;
+    width: 12%;
+  }
+
+
+
 
   /* TRANSICIONES*/
 
@@ -41,16 +57,65 @@
     height: 0px;
     flex-direction: row;
     width: 100%;
-    background-color: green;
+    background-color: rgb(15, 119, 97);
   }
 
   .header-scrollend{
     display: flex;
     transition-property: height  color;
     transition-duration: 1s;
+    top: 0;
     position:fixed;
     height:131px;
     flex-direction: row;
     width: 100%;
-    background-color: blue;
+    background-color: rgb(15, 119, 97);
   }
+
+  .nav-scroll{
+    display: flex;
+    transition-property: height;
+    transition-duration: 2s;
+    height: 0;
+    position: fixed;
+    flex-direction: row;
+    justify-content:center;
+    background-color: rgb(15, 119, 97);
+    width: 100%;
+    
+  }
+
+  .nav-scroll .item{
+    transition-property: height;
+    transition-duration: 2s;
+    display: flex;
+    height: 0;
+    text-align: center;
+    width: 12%;
+  }
+
+
+  .nav-scrollend{
+    display: flex;
+    transition-property: height;
+    transition-duration: 2s;
+    position: fixed;
+    flex-direction: row;
+    height: 2em;
+    
+    justify-content:center;
+    background-color: rgb(15, 119, 97);
+    width: 100%;
+    
+  }
+
+  .nav-scrollend .item{
+    transition-property: height;
+    transition-duration: 2s;
+    display: flex;
+    height: 2em;
+    text-align: center;
+    width: 12%;
+  }
+
+  
