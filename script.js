@@ -31,16 +31,22 @@ const myFunc=(scrollY)=>{
             navScroll.remove()
         }
     }else{
+        //HEADER
         headerScroll=document.querySelector(".header-scroll")
         headerScroll.removeAttribute("hidden")
         headerScroll.className="header-scrollend"
         console.log("asdads");
 
-        
+        //NAVIGATOR
         navScroll=document.querySelector(".nav").cloneNode(true)
         document.querySelector(".container").insertBefore(navScroll,document.querySelector(".body"))
         navScroll.className="nav-scroll"
         console.log(navScroll);
-        navScroll.className="nav-scrollend"
+        setTimeout(()=>{
+            navScroll.className="nav-scrollend"
+        },100)
+        
+       
+        
     }
 }
