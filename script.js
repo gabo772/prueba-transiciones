@@ -15,7 +15,7 @@ window.addEventListener("scroll",()=>{
 })
 
 const myFunc=(scrollY)=>{
-    let headerScroll
+    let headerScroll,navScroll
     if(scrollY<270 ){
         if(document.querySelector(".header-scroll")){
             headerScroll=document.querySelector(".header-scroll")
@@ -26,10 +26,27 @@ const myFunc=(scrollY)=>{
             headerScroll.className="header-scroll"
             headerScroll.setAttribute("hidden",true)
         }
+        if(document.querySelector(".nav-scrollend")){
+            navScroll=document.querySelector(".nav-scrollend")
+            navScroll.remove()
+        }
     }else{
+        //HEADER
         headerScroll=document.querySelector(".header-scroll")
         headerScroll.removeAttribute("hidden")
         headerScroll.className="header-scrollend"
         console.log("asdads");
+
+        //NAVIGATOR
+        navScroll=document.querySelector(".nav").cloneNode(true)
+        document.querySelector(".container").insertBefore(navScroll,document.querySelector(".body"))
+        navScroll.className="nav-scroll"
+        console.log(navScroll);
+        setTimeout(()=>{
+            navScroll.className="nav-scrollend"
+        },100)
+        
+       
+        
     }
 }
