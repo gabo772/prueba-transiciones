@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+#container-transicion{
+    position: absolute;
+    height:34px;
+    width: 100vw;
+    background-color: grey;
+}
+
+#transicion-lineal{
+    position: absolute;
+    background-color: grey;
+    font-size: 25px;
+    left:2200px;
+    width: 550px;
+    
+    
+}
+
+#transicion-linealend{
+    position: absolute;
+    transition-property: left;
+    transition-duration: 15s;
+    transition-timing-function: linear;
+    background-color: grey;
+    font-size: 25px;
+    /*left:1057px;*/
+    left:-550px;
+    width: 550px;
+    
+    
+}
+
+
+#btn{
+    position: absolute;
+    top:60px;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 8px;
+    padding:5px 5px;
+    left:8px;
+    background-color: lightskyblue;
+}
+
+#btn:hover{
+    background-color: lime;
+}
